@@ -1,8 +1,9 @@
-import React from 'react'
+import carsData from "@/data/carsData"
+import Cras from "../module/Cras"
 
 function CarsPage() {
   return (
-    <div>CarsPage</div>
+    <Cras carsData={carsData}  />
   )
 }
 
