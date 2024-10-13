@@ -10,7 +10,7 @@ function AllCars() {
 
   useEffect(() => {
       const handleResize = () => {
-          if (window.innerWidth > 640) {
+          if (window.innerWidth > 768) {
               setItemsToShow(4); // for screens larger than mobile
           } else {
               setItemsToShow(3); // for mobile screens
