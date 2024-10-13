@@ -1,11 +1,33 @@
 "use client" 
 import carsData from "@/data/carsData"
-
+import { useState, useEffect } from "react";
 import Cras from "./Cras"
 import Link from "next/link";
 
 function AllCars() {
-    const result = carsData.slice(0,4);
+
+  const [itemsToShow, setItemsToShow] = useState(3); // initial value for mobile
+
+  useEffect(() => {
+      const handleResize = () => {
+          if (window.innerWidth > 640) {
+              setItemsToShow(4); // for screens larger than mobile
+          } else {
+              setItemsToShow(3); // for mobile screens
+          }
+      };
+
+      window.addEventListener("resize", handleResize);
+
+      // Check screen size on initial load
+      handleResize();
+
+      // Cleanup listener on unmount
+      return () => window.removeEventListener("resize", handleResize);
+  }, []);
+ 
+    const result = carsData.slice(0,itemsToShow);
+    
 
   return (
     <>  
@@ -17,7 +39,7 @@ function AllCars() {
         
         </div>
         </Link>
-        <Cras carsData={result} />
+        <Cras carsData={result}  />
         </>
   )
 

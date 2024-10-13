@@ -3,6 +3,7 @@ import carsData from "@/data/carsData";
 import { useParams, useRouter  } from "next/navigation"
 import Card from "../module/Card";
 import Back from "../icons/Back";
+import NotFoundPage from "./NotFoundPage";
 
 
 function FilterPage() {
@@ -22,7 +23,7 @@ const backHandler = () => {
     
 
 
-    if(!result.length) return <p className="text-3xl font-bold text-black text-center">NotFound</p>
+    if(!result.length) return <NotFoundPage />
   return (
     <div className="flex flex-col justify-items-center ">
     <div className="bg-emerald-300 inline-block mt-10 p-2 w-[150px] rounded-md font-bold text-3xl  cursor-pointer ml-[80px] "  onClick={backHandler}>

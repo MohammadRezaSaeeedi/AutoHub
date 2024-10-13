@@ -16,7 +16,7 @@ function Card(props) {
             <p className="pl-1 pt-2 font-bold" >{`${name} ${model}`}</p>
             <p className=" pl-1 pb-2 pt-3 text-sm" >{`${year} . ${distance}km`}</p>
             <div className="flex flex-row-reverse justify-between px-1 mt-4">
-                <p className=" p-1 rounded-lg font-bold text-sm bg-emerald-300 inline-block " >$ {price}</p>
+                <p className=" p-1 rounded-lg font-bold text-sm bg-emerald-300 inline-block " >${price}</p>
                 <div className="flex flex-row-reverse gap-1   ">
                     <p className="font-semibold">{location}</p>
                  <div >  <Location /> </div>
