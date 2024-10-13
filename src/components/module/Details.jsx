@@ -73,7 +73,7 @@ const {id, name, model, year, distance, location, image, price, description, } =
         <p className="text-sm font-serif" >{description}</p>
        </div>
        <div className="mt-10  w-[300px] sm:w-[500px] md:w-[710px] shadow-[0_4px_15px_#0000001a,0_-4px_15px_#0000001a] rounded-md flex flex-row-reverse justify-between gap-4 p-2 ">
-        <p>{price}</p>
+        <p>{`$${price.toLocaleString()}`}</p>
         <div className="flex flex-row-reverse gap-1 ">
             <p>Price</p>
             <div  >
