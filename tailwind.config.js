@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        Classic_blue: "#0F4C81",
       },
       animation: {
         'gradient': 'gradient 1s linear infinite',

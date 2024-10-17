@@ -5,6 +5,7 @@ function Hatchback() {
       y="0px"
       width="30px"
       height="30px"
+      fill="#FFF"
       viewBox="0 0 485.838 485.839"
     >
       <g>

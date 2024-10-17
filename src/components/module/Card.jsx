@@ -14,16 +14,16 @@ function Card(props) {
             <div className="absolute w-[220px] h-[290px] z-[2] backdrop-blur-xl bg-white overflow-hidden rounded-[10px] left-[5px] top-[5px]">
             <Image src={image} width={500} height={700} alt={name} className="rounded-t-xl" />
             <p className="pl-1 pt-2 font-bold" >{`${name} ${model}`}</p>
-            <p className=" pl-1 pb-2 pt-3 text-sm" >{`${year} . ${distance}km`}</p>
+            <p className=" pl-1 pb-2 pt-3 text-sm" >{`${year} . ${distance.toLocaleString()}km`}</p>
             <div className="flex flex-row-reverse justify-between px-1 mt-4">
-                <p className=" p-1 rounded-lg font-bold text-sm bg-emerald-300 inline-block " >${price.toLocaleString()}</p>
+                <p className=" p-1 rounded-lg font-bold text-white text-sm bg-Classic_blue inline-block " >${price.toLocaleString()}</p>
                 <div className="flex flex-row-reverse gap-1   ">
                     <p className="font-semibold">{location}</p>
                  <div >  <Location /> </div>
                 </div>
             </div>
                 </div>
-            <div className=" absolute z-[1] w-[160px] h-[160px] bg-emerald-400 opacity-100 blur-md animate-[blob_3s_infinite_ease] rounded-[50%] left-2/4 top-2/4"></div>
+            <div className=" absolute z-[1] w-[160px] h-[160px] bg-Classic_blue opacity-100 blur-md animate-[blob_3s_infinite_ease] rounded-[50%] left-2/4 top-2/4"></div>
            
         </div>
     </Link>

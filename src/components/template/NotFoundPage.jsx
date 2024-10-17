@@ -5,7 +5,7 @@ import Danger from "../icons/Danger"
 function NotFoundPage() {
   return (
     <div className="  mt-[80px] flex justify-center ">
-  <div className="bg-[#33cc99] text-white w-[300px] sm:w-[600px] md:w-[758px]  overflow-hidden rounded-md flex ">
+  <div className="bg-Classic_blue text-white w-[300px] sm:w-[600px] md:w-[758px]  overflow-hidden rounded-md flex ">
   <div className=" hidden sm:block sm:mt-[110px] md:mt-[150px] ml-[25px]">
     <Danger />
     </div>

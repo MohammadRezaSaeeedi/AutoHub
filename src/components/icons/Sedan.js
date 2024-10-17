@@ -1,6 +1,6 @@
 function Sedan() {
   return (
-    <svg x="0px" y="0px" width="30px" height="30px" viewBox="0 0 98.967 98.967">
+    <svg x="0px" y="0px" width="30px" height="30px" fill="#FFF" viewBox="0 0 98.967 98.967">
       <g>
         <g>
           <path

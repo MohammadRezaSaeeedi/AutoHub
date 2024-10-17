@@ -15,11 +15,11 @@ const {id, name, model, year, distance, location, image, price, description, } =
          <div className="absolute w-[290px] h-[210px] sm:w-[490px] sm:h-[400px] md:w-[700px] md:h-[500px] z-[2] backdrop-blur-xl bg-white overflow-hidden rounded-[10px] left-[5px] top-[5px]">
         <Image src={image} width={700} height={500} alt={name} className="rounded-lg w-[290px] h-[210px] sm:w-[490px] sm:h-[400px] md:w-[700px] md:h-[500px]" />
          </div>
-         <div className=" absolute z-[1] w-[400px] h-[400px] bg-emerald-400 opacity-100 blur-md animate-[blob_3s_infinite_ease] rounded-[50%] left-2/4 top-2/4"></div>
+         <div className=" absolute z-[1] w-[400px] h-[400px] bg-Classic_blue opacity-100 blur-md animate-[blob_3s_infinite_ease] rounded-[50%] left-2/4 top-2/4"></div>
          </div>
         
     
-        <p className='mt-10 font-bold text-xl sm:text-2xl md:text-3xl bg-clip-text text-transparent bg-[linear-gradient(to_left,theme(colors.emerald.400),theme(colors.slate.900),theme(colors.teal.600))] bg-[length:200%_auto]  animate-gradient' >{`${name} ${model}`}</p>
+        <p className='mt-10 font-bold text-xl sm:text-2xl md:text-3xl bg-clip-text text-transparent bg-[linear-gradient(to_left,theme(colors.blue.400),theme(colors.slate.900),theme(colors.blue.800))] bg-[length:200%_auto]  animate-gradient' >{`${name} ${model}`}</p>
         
         <div className="mt-10  w-[300px] sm:w-[500px] md:w-[710px] shadow-[0_4px_15px_#0000001a,0_-4px_15px_#0000001a] rounded-md flex flex-col gap-4 p-2 " >
         <div className="flex flex-row-reverse justify-between">
@@ -82,7 +82,7 @@ const {id, name, model, year, distance, location, image, price, description, } =
         </div>
        </div>
        <Link href="/">
-       <button className=" mt-10  w-[300px] sm:w-[500px] md:w-[710px] shadow-[0_4px_15px_#0000001a,0_-4px_15px_#0000001a] p-1 bg-emerald-300 font-bold text-2xl rounded-md" >Buy</button>
+       <button className=" mt-10  w-[300px] sm:w-[500px] md:w-[710px] shadow-[0_4px_15px_#0000001a,0_-4px_15px_#0000001a] p-1 bg-Classic_blue font-bold text-2xl text-white rounded-md" >Buy</button>
        </Link>
     </div>
   )

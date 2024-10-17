@@ -26,12 +26,12 @@ const backHandler = () => {
     if(!result.length) return <NotFoundPage />
   return (
     <div className="flex flex-col justify-items-center ">
-    <div className="bg-emerald-300 inline-block mt-10 p-2 w-[150px] rounded-md font-bold text-3xl  cursor-pointer ml-[80px] "  onClick={backHandler}>
+    <div className="bg-Classic_blue inline-block mt-10 p-2 w-[150px] rounded-md font-bold text-3xl  cursor-pointer ml-[80px] "  onClick={backHandler}>
         <div className="flex gap-6 ">
         <div  >
     <Back  />
         </div>
-        <span>back</span>
+        <span className="text-white">back</span>
 
         </div>
     </div >
