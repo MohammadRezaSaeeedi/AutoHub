@@ -16,7 +16,7 @@ function CategoryPage() {
         return carsData.filter(car => car.category === categoris)
     }
     const result = handelCar(carsData,categoris);
-    
+    console.log(result)
 
   return (
     <div className="flex flex-col justify-items-center text-white">
